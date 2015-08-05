@@ -10,7 +10,7 @@ namespace XamarinPatch
 	{
 		public static void Main (string[] args)
 		{
-			const string directory = @"..";// @"../../../../../";
+			const string directory = @"../../";// @"../../../../../";
 			string[] files = Directory.GetFiles (directory, "Xamarin.Forms.Core.dll", SearchOption.AllDirectories);
 			foreach (string file in files) {
 				patchXamarinFormsCoreDll (path: file, typeName: "Xamarin.Forms.AnimationExtensions", methodName: "HandleTweenerUpdated");
